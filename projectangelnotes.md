@@ -22,5 +22,8 @@ Add CSS to style our site
 - Font for header https://fonts.google.com/specimen/Ysabeau+SC
 
 
-
+12/28/2024
 -------
+Add more css styling to websites
+- Update all pages with more css styling
+- Home button added to top right of all webpages
