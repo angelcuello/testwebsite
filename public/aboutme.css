@@ -1,0 +1,123 @@
+body{
+    background-color: black;
+    color: #FFF6E9;
+}
+
+.header{
+   text-align: center;
+}
+
+#title_message{
+    font-family: "Lavishly Yours", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80pt;
+    margin-bottom: 20px;
+    background-color: #4335A7;
+    color: #FF7F3E;
+}
+
+#name{
+    font-family: "Funnel Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300p;
+    font-style: normal;
+    font-size: 30pt;
+    color: #FFF6E9;
+}
+
+#profile_pic{
+    width: 75%;
+
+}
+
+
+#header_box{
+    background-color: #80C4E9;
+    width: 25%;
+    margin-left: 37.5%;
+    padding: 10px 10px 40px 10px;
+    margin-bottom: 20px;
+    border: 10px solid #4335A7;
+
+}
+
+.summary{
+    background-color: #4335A7;
+    margin: 0px;
+    padding: 10px;
+    border: 4px solid #FF7F3E;
+    color: #FFF6E9;
+    font-size: 18pt;
+}
+
+#work_full{
+font-size: small;
+}
+
+.work{
+
+}
+
+.work_name{
+
+}
+
+#work_header{
+
+}
+
+#certs_full ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next row */
+    list-style: none; /* Removes default bullet points */
+    padding: 15px; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    justify-content: space-around; /* Centers and spaces out the items */
+
+}
+
+#certs_full ul li {
+    flex: 0 1 45%; /* Each item takes up 45% of the row */
+    margin-bottom: 20px; /* Adds spacing between rows */
+    text-align: center; /* Centers content in each item */
+}
+
+.certs{
+
+}
+
+#bottom{
+
+    background-color: #80C4E9;
+    margin: 0px;
+    padding: 10px;
+    border: 4px solid #FF7F3E;
+    color: #FFF6E9;
+
+}
+
+#certs_header{
+
+
+
+
+}
+
+.certs_image{
+    width: 80px;
+    height: 80px;
+}
+
+.linkedin{
+
+}
+
+hr{
+      border: 1px solid #4335A7;
+}
+
+#bottom_divider{
+    border: 3px solid #4335A7;
+    margin-bottom: 0;
+}
