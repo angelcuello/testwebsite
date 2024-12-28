@@ -3,6 +3,12 @@ body{
     color: #FFF6E9;
 }
 
+#top_banner{
+    text-align: right;
+    margin: 0;
+    padding: 6px;
+    font-size: 15pt;
+}
 .header{
    text-align: center;
 }
@@ -13,6 +19,7 @@ body{
     font-style: normal;
     font-size: 80pt;
     margin-bottom: 20px;
+    margin-top: 0;
     background-color: #4335A7;
     color: #FF7F3E;
 }

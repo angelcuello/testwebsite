@@ -33,4 +33,13 @@ ul{
     list-style-position: inside;
 }
 
+#footer_divider{
+    margin:0 
+}
 
+#footer{
+    margin: 0;
+    padding: 1%;
+    background-color: #F73859;
+    font-size: large;
+}
