@@ -1,0 +1,42 @@
+body{
+    background-color: #283149;
+}
+
+
+hr{
+    border: 1px solid #404B69;
+    margin: 2%;
+}
+
+#heading{
+    text-align: center;
+    color: #EDEDED;
+    border: 10px solid #404B69;
+    background-color: #F73859;
+    margin: 0%;
+    font-family: Ysabeau SC, sans-serif;
+}
+
+#heading_div{
+    border: 2px solid ;
+    color: #404B69;
+
+}
+
+.list_item{
+width: 50%;
+padding: 20px;
+margin-left: 25%;
+background-color: #F73859;
+color: #EDEDED;
+text-align: center;
+border: 8px solid #404B69;
+}
+
+
+
+ul{
+    list-style-position: inside;
+}
+
+
