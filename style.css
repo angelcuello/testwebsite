@@ -86,9 +86,9 @@ img{
         margin-bottom: 20px;
     }
     img{
-        width: 30%;
-        height:fit-content;
-    }
+        height: 8rem;
+        width: fit-content;
+        }
     
     .main_sub{
         flex-direction: column;
