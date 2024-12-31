@@ -12,6 +12,7 @@ img{
 h1{
 font-family: "Libre Baskerville", serif;
 text-transform: uppercase;
+text-align: center;
 font-size: 3rem;
 }
 
@@ -30,4 +31,10 @@ font-size: 3rem;
     margin: 0;
     padding: 6px;
     font-size: 15pt;
+}
+
+@media (max-width:780px){
+    h1{
+        font-size: 2rem;
+    }
 }
