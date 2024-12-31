@@ -1,7 +1,6 @@
 body{
     background-color: #283149;
-    display: flex;
-    flex-direction: column;
+   
     
 }
 
@@ -23,21 +22,20 @@ h1{
 }
 
 .main {
+    display: flex;
+    flex-direction: row;
     flex: 1;
     background-color: #404B69;
     border: 8px solid #F73859;
+    text-align: center;
   }
 
 img{
-    width: 220px;
-    height: 15rem;
+    height: 12rem;
 }
 
 .project{
-    display: inline-block;
-    width: 30%;
-    margin-left: 1.5rem;
-   
+    width: 100%;   
 }
 
 
