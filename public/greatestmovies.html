@@ -3,17 +3,38 @@
 
     body{
         background-color: goldenrod;
-        text-align: center;
         list-style-position: inside;
-        
     }
+
+    #page_title{
+        font-size: 8rem;
+        margin: 0;
+        text-align: center;
+
+    }
+
+   #subtitle{
+        font-size: 4rem;  
+        text-align: center;   
+    }
+
+    #subtitle_description{
+        font-size: 2rem;
+    }
+
+
+    .movie .header{
+        font-size: 2rem;  
+        text-align: center;   
+    }
+
     
-    .movie_header{
-        font-size: 20px     
-    }
 
     .best_moment{
         color: greenyellow;
+        text-align: center;
+        position: relative;
+        font-size: 1.5rem;
 
     }
 
@@ -21,15 +42,75 @@
         text-align: right;
         margin: 0;
         padding: 6px;
-        font-size: 15pt;
+        font-size: 1rem;
+        
     }
 
-    #page_title{
-        font-size: 60pt;
+
+    img.left{
+        float: left;
+        margin-right: 20px;
+        width: 20rem;
+      
+    }
+
+    img.right{
+        float: right;
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 20rem;
+    }    
+ 
+    .divider{        
+        clear: both;
+    }
+
+    .movie .description{
+        font-size: 1.5rem;
+    }
+
+
+
+    @media (max-width:680px){
+        body{
+            text-align: center;
+        }
+
+        #page_title{
+        font-size: 3rem;
         margin: 0;
+        }
+
+        #subtitle{
+        font-size: 1.5rem;   
+        }
+
+        img.left{
+        float: none;
+        margin-top: 20px;
+        width: 50%;
+        margin-bottom: 10px;
+        }
+        img.right{
+            float: none;
+            margin-top: 20px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    
+        #subtitle_description{
+            font-size: 1.25rem;
+        }
+
+
+
+
 
     }
-    
+
+
+
+
 </style>
 
 <div id="top_banner">
@@ -39,83 +120,129 @@
 
 <h1 id="page_title">The Greatest Movies of all time</h1>
 
+<div class="header subsection">
+    <h2 id="subtitle">The Undeniably Greatest List of Movies of All Time.</h2>
+    <p id="subtitle_description">Welcome to The Undeniably Greatest List of Movies of All Time, a meticulously curated collection celebrating cinematic brilliance across generations, genres, and cultures. This page isn’t just a list; it’s an homage to the art of storytelling, a treasure trove for movie enthusiasts, and a journey through the finest moments in film history.</p>
+</div>
+<hr class="header divider" />
 
-<h2>The Undeniably Greatest List of Movies of All Time.</h2>
-<p>Welcome to The Undeniably Greatest List of Movies of All Time, a meticulously curated collection celebrating cinematic brilliance across generations, genres, and cultures. This page isn’t just a list; it’s an homage to the art of storytelling, a treasure trove for movie enthusiasts, and a journey through the finest moments in film history.</p>
 
-<hr />
 <ol>
-    <li class="movie_header"> <a href="https://www.imdb.com/title/tt1596343/">Fast Five (2011)</a><br/>
-        <img src="../images/fast5.jpg" alt="Fast Five Image" width="150"/>
-        <p>The Pinnacle of Cinematic Excellence<br />
-            Fast Five redefined action cinema, blending pulse-pounding heists with heartwarming family dynamics. The film’s iconic Rio heist scene isn’t just memorable—it’s a masterclass in storytelling and visual spectacle. This is the moment the Fast & Furious saga became a legend.<br />
-                <ul><li class="best_moment">Best Moment: The vault heist through Rio’s streets—unmatched in brilliance.</li></ul></p>
-     </li>
-     <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt2820852/">Furious 7 (2015)</a><br/>
-        <img src="https://m.media-amazon.com/images/M/MV5BZmY0YWJhNTctYTQxZC00ZDU5LWJlYmItNmQzMjFlOGMzNWI3XkEyXkFqcGc@._V1_.jpg" alt="Furious 7 Image" width="150"/>
-        <p>An Emotional Masterpiece<br />
-            Furious 7 is not just an action movie; it’s a heartfelt ode to brotherhood, legacy, and family. Paul Walker’s final performance anchors the film with genuine emotion, and the action is nothing short of extraordinary. The skyscraper jump? Pure genius.<br />
-            <ul><li class="best_moment">Best Moment: The heartfelt tribute to Paul Walker with “See You Again.”</li></ul></p>
+    <div class="movie ranked_item" id="1">
+        <img class="left" src="../images/fast5.jpg" alt="Fast Five Image"/>
+        <li class="movie header left"> <a href="https://www.imdb.com/title/tt1596343/">Fast Five (2011)</a><br/>
+            
+            <p class="movie description">The Pinnacle of Cinematic Excellence<br />
+                Fast Five redefined action cinema, blending pulse-pounding heists with heartwarming family dynamics. The film’s iconic Rio heist scene isn’t just memorable—it’s a masterclass in storytelling and visual spectacle. This is the moment the Fast & Furious saga became a legend.<br />
+                    <ul><li class="best_moment">Best Moment: The vault heist through Rio’s streets—unmatched in brilliance.</li></ul></p>
         </li>
-        <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt0232500/">The Fast and the Furious (2001)</a><br/>
-        <img src="../images/The Fast and the Furious (2001).jpg" alt="The Fast and the Furious Image" width="150"/>
-        <p>The Birth of a Phenomenon<br />
-            The movie that started it all is a cultural touchstone, introducing audiences to Dom, Brian, and the underground street-racing world. This isn’t just a film—it’s the genesis of a global sensation.<br />
-            <ul><li class="best_moment">Best Moment: The electrifying final race that solidified Dom and Brian’s bond.</li></ul></p>
+        <hr class="movie divider" />
+
+    </div>
+    <div class="movie ranked_item" id="2">
+        <img class="right" src="https://m.media-amazon.com/images/M/MV5BZmY0YWJhNTctYTQxZC00ZDU5LWJlYmItNmQzMjFlOGMzNWI3XkEyXkFqcGc@._V1_.jpg" alt="Furious 7 Image"/>
+        <li  class="movie header right"> <a href="https://www.imdb.com/title/tt2820852/">Furious 7 (2015)</a><br/>
+            <p class="movie description">An Emotional Masterpiece<br />
+                Furious 7 is not just an action movie; it’s a heartfelt ode to brotherhood, legacy, and family. Paul Walker’s final performance anchors the film with genuine emotion, and the action is nothing short of extraordinary. The skyscraper jump? Pure genius.<br />
+                <ul><li class="best_moment">Best Moment: The heartfelt tribute to Paul Walker with “See You Again.”</li></ul>
+            </p>
         </li>
-        <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt1905041/">Fast & Furious 6 (2013)</a><br/>
-        <img src="https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_.jpg" alt="Fast & Furious 6 Image" width="150"/>
-        <p> A Perfect Balance of Spectacle and Story<br />
-            Explosive, emotional, and endlessly entertaining, Fast & Furious 6 raised the stakes to unimaginable heights. The plane sequence? That’s not just action—it’s pure cinematic poetry.<br />
-            <ul><li class="best_moment">Best Moment: Dom’s impossible mid-air leap to save Letty. If that’s not cinema, what is?</li></ul></p>
-     </li>
-     <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt4630562/">Furious 8: The Fate of the Furious (2017)</a><br/>
-        <img src="../images/Furious 8.jpg" alt="The Fate of the Furious Image" width="150"/>
-        <p>A Bold Evolution<br />
-            What do you do when a family fractures? You tell a story that’s as emotional as it is action-packed. Dom’s betrayal cuts deep, but the submarine finale ensures this film roars across the finish line.<br />
-            <ul><li class="best_moment">Best Moment: The outrageous submarine chase on icy tundra.</li></ul></p>
-     </li>
-     <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt0463985/">Tokyo Drift (2006)</a><br/>
-        <img src="https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_FMjpg_UX1000_.jpg" alt="Tokyo Drift Image" width="150"/>
-        <p>A Cult Classic That Defines Cool<br />
-            Tokyo Drift is an underground legend, delivering style, speed, and some of the most iconic drifting scenes ever put to screen. Han’s debut? Legendary. The neon-lit streets of Tokyo are unforgettable.<br />
-            <ul><li class="best_moment">Best Moment: The breathtaking mountain drift that showcases skill and heart.</li></ul></p>
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="3">
+        <img class="left" src="../images/The Fast and the Furious (2001).jpg" alt="The Fast and the Furious Image"/>
+        <li class="movie header left"> <a href="https://www.imdb.com/title/tt0232500/">The Fast and the Furious (2001)</a><br/>
+            <p class="movie description">The Birth of a Phenomenon<br />
+                The movie that started it all is a cultural touchstone, introducing audiences to Dom, Brian, and the underground street-racing world. This isn’t just a film—it’s the genesis of a global sensation.<br />
+                <ul><li class="best_moment">Best Moment: The electrifying final race that solidified Dom and Brian’s bond.</li></ul>
+            </p>
         </li>
-        <hr />
-    <li  class="movie_header"><a href="https://www.imdb.com/title/tt5433140/">Fast X (2023)</a><br/>
-        <img src="../images/Fast X.jpg" alt="Fast X Image" width="150"/>
-        <p>A Modern Epic in the Making<br />
-            Fast X redefines what blockbuster filmmaking can achieve, with massive set pieces and unforgettable moments. Jason Momoa’s villain is as charismatic as he is dangerous, proving the series still has fresh surprises in store.<br />
-            <ul><li class="best_moment">Best Moment: The jaw-dropping bomb sequence in Rome.</li></ul></p></li>
-            <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt0322259/">2 Fast 2 Furious (2003)</a><br/>
-        <img src="https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="2 Fast 2 Furious Image" width="150"/>
-        <p>Pure, Unadulterated Fun<br />
-            Miami’s vibrant streets, high-octane action, and an unbeatable buddy duo of Brian and Roman make this film an essential part of the franchise’s DNA. Fun, colorful, and unapologetically fast.<br />
-            <ul><li class="best_moment">Best Moment: The adrenaline-pumping bridge jump during the opening race.</li></ul></p>
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="4">
+        <img class="right" src="https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_.jpg" alt="Fast & Furious 6 Image" />
+        <li  class="movie header right"> <a href="https://www.imdb.com/title/tt1905041/">Fast & Furious 6 (2013)</a><br/>
+            <p class="movie description"> A Perfect Balance of Spectacle and Story<br />
+                Explosive, emotional, and endlessly entertaining, Fast & Furious 6 raised the stakes to unimaginable heights. The plane sequence? That’s not just action—it’s pure cinematic poetry.<br />
+                <ul><li class="best_moment">Best Moment: Dom’s impossible mid-air leap to save Letty. If that’s not cinema, what is?</li></ul>
+            </p>
         </li>
-        <hr />
-    <li  class="movie_header"> <a href="https://www.imdb.com/title/tt6806448/">Hobbs & Shaw (2019)</a><br/>
-        <img src="../images/Hobbs & Shaw.jpg" alt="Hobbs & Shaw Image" width="150"/>
-        <p>A Spin-Off That Stands Tall<br />
-            This isn’t just a spin-off—it’s a celebration of everything that makes action movies great. Dwayne Johnson and Jason Statham’s chemistry is electric, and the outrageous stunts are unforgettable.<br />
-            <ul><li class="best_moment">Best Moment: The final showdown in Samoa blends tradition with unstoppable action.</li></ul></p>
-     </li>
-        <hr />
-    <li  class="movie_header">
-         <a href="https://www.imdb.com/title/tt1013752/">Fast & Furious (2009)</a><br/>
-        <img src="https://m.media-amazon.com/images/M/MV5BM2Y1YzhkNzUtMzhmZC00OTFkLWJjZDktMWYzZmQ0Y2Y5ODcwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Fast & Furious Image" width="150"/>
-           <p>The Return of Legends<br />
-               The reunion of Dom and Brian is a cinematic event, bringing heart and grit back to the franchise. This film laid the groundwork for the incredible evolution of the series.<br />
-               <ul><li class="best_moment">Best Moment: The desert tanker heist—a thrilling callback to the series’ roots.</li></ul></p>
+        <hr class="movie divider" />
+    </div>
+    
+    <div class="movie ranked_item" id="5">   
+        <img class="left" src="../images/Furious 8.jpg" alt="The Fate of the Furious Image"/>
+        <li class="movie header left"> <a href="https://www.imdb.com/title/tt4630562/">Furious 8: The Fate of the Furious (2017)</a><br/>
+            <p class="movie description">A Bold Evolution<br />
+                What do you do when a family fractures? You tell a story that’s as emotional as it is action-packed. Dom’s betrayal cuts deep, but the submarine finale ensures this film roars across the finish line.<br />
+                <ul><li class="best_moment">Best Moment: The outrageous submarine chase on icy tundra.</li></ul>
+            </p>
         </li>
-    </ol>
-    <hr />
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="6">  
+        <img class="right" src="https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_FMjpg_UX1000_.jpg" alt="Tokyo Drift Image"/>
+        <li  class="movie header right"> <a href="https://www.imdb.com/title/tt0463985/">Tokyo Drift (2006)</a><br/>
+            <p class="movie description">A Cult Classic That Defines Cool<br />
+                Tokyo Drift is an underground legend, delivering style, speed, and some of the most iconic drifting scenes ever put to screen. Han’s debut? Legendary. The neon-lit streets of Tokyo are unforgettable.<br />
+                <ul><li class="best_moment">Best Moment: The breathtaking mountain drift that showcases skill and heart.</li></ul>
+            </p>
+        </li>
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="7">
+        <img class="left" src="../images/Fast X.jpg" alt="Fast X Image"/>
+        <li class="movie header left"> <a href="https://www.imdb.com/title/tt5433140/">Fast X (2023)</a><br/>
+            <p class="movie description">A Modern Epic in the Making<br />
+                Fast X redefines what blockbuster filmmaking can achieve, with massive set pieces and unforgettable moments. Jason Momoa’s villain is as charismatic as he is dangerous, proving the series still has fresh surprises in store.<br />
+                <ul><li class="best_moment">Best Moment: The jaw-dropping bomb sequence in Rome.</li></ul>
+            </p>
+        </li>
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="8">
+        <img class="right" src="https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="2 Fast 2 Furious Image"/>
+        <li  class="movie header right"> <a href="https://www.imdb.com/title/tt0322259/">2 Fast 2 Furious (2003)</a><br/>
+            <p class="movie description">Pure, Unadulterated Fun<br />
+                Miami’s vibrant streets, high-octane action, and an unbeatable buddy duo of Brian and Roman make this film an essential part of the franchise’s DNA. Fun, colorful, and unapologetically fast.<br />
+                <ul><li class="best_moment">Best Moment: The adrenaline-pumping bridge jump during the opening race.</li></ul>
+            </p>
+        </li>
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="9">
+        <img class="left" src="../images/Hobbs & Shaw.jpg" alt="Hobbs & Shaw Image"/> 
+        <li class="movie header left"> <a href="https://www.imdb.com/title/tt6806448/">Hobbs & Shaw (2019)</a>
+            <br/>
+            <p class="movie description">A Spin-Off That Stands Tall<br />
+                This isn’t just a spin-off—it’s a celebration of everything that makes action movies great. Dwayne Johnson and Jason Statham’s chemistry is electric, and the outrageous stunts are unforgettable.<br />
+                <ul><li class="best_moment">Best Moment: The final showdown in Samoa blends tradition with unstoppable action.</li></ul>
+            </p>
+        </li>
+        <hr class="movie divider" />
+    </div>
+
+    <div class="movie ranked_item" id="10"> 
+        <img class="right" src="https://m.media-amazon.com/images/M/MV5BM2Y1YzhkNzUtMzhmZC00OTFkLWJjZDktMWYzZmQ0Y2Y5ODcwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Fast & Furious Image"/> 
+        <li  class="movie header right"> <a href="https://www.imdb.com/title/tt1013752/">Fast & Furious (2009)</a>
+            <br/>
+            <p class="movie description">The Return of Legends<br />
+                The reunion of Dom and Brian is a cinematic event, bringing heart and grit back to the franchise. This film laid the groundwork for the incredible evolution of the series.<br />
+                <ul><li class="best_moment">Best Moment: The desert tanker heist—a thrilling callback to the series’ roots.</li></ul>
+            </p>
+        </li>
+    </div>
+</ol>
+    
+
+<hr class="footer divider" />
+
 <h4>Why These Movies Are the Greatest of All Time</h4>
 <p>The Fast & Furious franchise isn’t just a collection of films—it’s a cultural phenomenon. These movies aren’t about physics; they’re about family. They’re not about limits; they’re about breaking them. From street racing to global espionage, the saga has transcended genres to become the ultimate celebration of action, camaraderie, and heart.<br /><br />
    
