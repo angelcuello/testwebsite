@@ -50,7 +50,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   #roll_button {
     font-size: 4rem;
@@ -61,5 +61,12 @@ footer {
     border: yellow solid 8px;
     border-radius: 5px;
   }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
 
   }
