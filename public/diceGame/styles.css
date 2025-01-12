@@ -45,4 +45,21 @@ footer {
   text-align: left;
 
 }
+               
 
+
+
+
+@media (max-width: 768px) {
+
+  #roll_button {
+    font-size: 4rem;
+  }
+
+
+  button{
+    border: yellow solid 8px;
+    border-radius: 5px;
+  }
+
+  }
