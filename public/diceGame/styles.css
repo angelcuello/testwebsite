@@ -46,9 +46,13 @@ footer {
 
 }
                
+.list-unstyled{
+  text-align: left;
+}
 
-
-
+header h4{
+  text-align: left;
+}
 
 @media (max-width: 992px) {
 
