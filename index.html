@@ -12,7 +12,7 @@
 
 
 
-<body>
+<body data-bs-theme="dark">
     <header data-bs-theme="dark">
         <div class="text-bg-dark collapse" id="navbarHeader" style="">
           <div class="container">
@@ -32,11 +32,42 @@
                   <li><a href="./public/aboutme.html" class="text-white">About me</a></li>
                   <li><a href="mailto:angel.cuellojr@outlook.com" class="text-white">Email me</a></li>
                 </ul>
-
+                
                 <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" disabled>
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode (Comming Soon)</label>
-                </div>
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
+              </div>
+              
+              <script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                      const toggleSwitch = document.getElementById('flexSwitchCheckDefault');
+              
+                      // Check the stored state and update the toggle and body attribute
+                      const savedState = localStorage.getItem('darkMode');
+                      if (savedState === 'true' || savedState === null) {
+                          // Default to dark mode if no state is saved
+                          toggleSwitch.checked = true;
+                          document.body.setAttribute('data-bs-theme', 'dark');
+                          localStorage.setItem('darkMode', 'true'); // Save default state
+                      } else {
+                          toggleSwitch.checked = false;
+                          document.body.setAttribute('data-bs-theme', 'light');
+                      }
+              
+                      // Add event listener for toggle switch changes
+                      toggleSwitch.addEventListener('change', function () {
+                          if (toggleSwitch.checked) {
+                              document.body.setAttribute('data-bs-theme', 'dark');
+                              localStorage.setItem('darkMode', 'true'); // Save the state as "true"
+                              console.log('Dark mode enabled');
+                          } else {
+                              document.body.setAttribute('data-bs-theme', 'light');
+                              localStorage.setItem('darkMode', 'false'); // Save the state as "false"
+                              console.log('Light mode enabled');
+                          }
+                      });
+                  });
+              </script>
 
               </div>
 

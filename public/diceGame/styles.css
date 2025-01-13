@@ -30,7 +30,7 @@ img {
 
 footer {
   margin-top: 5%;
-  color: #EEEEEE;
+  color: black;
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
@@ -52,6 +52,10 @@ footer {
 
 header h4{
   text-align: left;
+}
+
+.white_text{
+  color: white;
 }
 
 @media (max-width: 992px) {
