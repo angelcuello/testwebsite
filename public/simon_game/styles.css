@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  text-align: center;  
   background-color: #011F3F;
 }
 
@@ -7,7 +7,7 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: #febfbf;
 }
 
 .container {
@@ -50,4 +50,9 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+#top_banner{
+  text-align: end;
+  margin-bottom: 0;
 }
